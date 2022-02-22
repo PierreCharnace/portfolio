@@ -11,17 +11,49 @@
 <body>
   <div>
     <header class="bg-gray-200 fixed top-0 left-0 right-0">
-        <ul class="flex">
+      <nav class="bg-gray-800">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex-shrink-0 flex items-center">
+              </div>
+              <div class="hidden sm:block sm:ml-6">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="#Home" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Accueil</a>
+      
+                  <a href="#tech-skills" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Compétences</a>
+      
+                  <a href="#portfolio" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projets</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Accueil</a>
+      
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Compétences</a>
+      
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projets</a>
+          </div>
+        </div>
+      </nav>
+       <!-- <ul class="flex">
             <li class="mr-3">
-              <a class="inline-block rounded py-1 px-3 hover:border-gray-200 text-blue-500 focus:bg-blue-500 focus:text-white hover:bg-blue-700 hover:text-white" href="#Home">Accueil</a>
+              <a class="inline-block rounded py-1 px-3 hover:border-gray-200 text-blue-500 focus:bg-blue-500 focus:text-white hover:bg-blue-700 hover:text-white" href="">Accueil</a>
             </li>
             <li class="mr-3">
-              <a class="inline-block rounded py-1 px-3 hover:border-gray-200 text-blue-500 focus:bg-blue-500 focus:text-white hover:bg-blue-700 hover:text-white" href="#tech-skills">Compétences</a>
+              <a class="inline-block rounded py-1 px-3 hover:border-gray-200 text-blue-500 focus:bg-blue-500 focus:text-white hover:bg-blue-700 hover:text-white" href="">Compétences</a>
             </li>
             <li class="mr-3">
-              <a class="inline-block rounded py-1 px-3 hover:border-gray-200 text-blue-500 focus:bg-blue-500 focus:text-white hover:bg-blue-700 hover:text-white" href="#portfolio">Portfolio</a>
+              <a class="inline-block rounded py-1 px-3 hover:border-gray-200 text-blue-500 focus:bg-blue-500 focus:text-white hover:bg-blue-700 hover:text-white" href="#">Portfolio</a>
             </li>
-          </ul>
+          </ul>-->
     </header>
     <section id="Home" class=" mt-8 pt-44 text-2xl font-bold flex justify-around">
       <div class=" text-justify flex flex-col items-center justify-evenly p-2">
@@ -43,68 +75,152 @@
         <h3 class="">À propos de moi :</h3>
           <p>
             Je me suis passionné pour le développement web au début de l'année 2021, ensuite j'ai fait la formation OpenClassrooms développeur
-            web que j'ai réussi. Je suis ouvert a n'impore quel défis à relever. Si vous êtes intéressé par mon profil veuillez m'addresser un 
+            web que j'ai réussi. Je suis prêt à relever n'importe quel défi. Si vous êtes intéressé par mon profil veuillez m'addresser un 
             mail ou me laisser un message sur linkedin. 
           </p>  
       </div>
     </section>
-    <section id="tech-skills" class="bg-gray-500 rounded-t-2xl mx-5 ">
-        <h2>Mes comppétences techniques</h2>
-        <div class="grid grid-cols-4 ">
-          <div>
-            <h3 >HTML 5</h3>
-            <p></p>
+    <section id="tech-skills" class="bg-gray-500 rounded-t-2xl mx-5 text-center text-white">
+      <div class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="lg:text-center">
+            <h2 class="text-2xl  text-indigo-600 font-semibold tracking-wide uppercase">Mes compétences techniques</h2>
           </div>
-          <div>
-            <h3>CSS 3</h3>
-            <p></p>
-          </div>
-          <div>
-            <h3>Bootstrap</h3>
-          <p></p>
-          </div>
-          <div>
-            <h3>Javascript</h3>
-            <p></p>
-          </div>
-          <div>
-            <h3>Vue.js</h3>
-            <p></p>
-          </div>
-          <div>
-            <h3>Node.js</h3>
-            <p></p>
-          </div>
-          <div>
-            <h3>MongoDB</h3>
-            <p></p>
-          </div>
-          <div>
-            <h3>MySQL</h3>
-            <p></p>
-          </div>
-         <div>
-          <h3>TailwindCSS</h3>
-          <p></p>
-         </div>
-         <div>
-            <h3>Express</h3>
-            <p></p>
-          </div>
-          <div>
-            <h3>Nuxt 3</h3>
-            <p></p>
-          </div>
-          <div>
-            <h3>Linux Pop_Os</h3>
-            <p></p>
-          </div>
-          <div>
-            <h3>git/github</h3>
-            <p></p>
+      
+          <div class="mt-10">
+            <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+              <div class="">
+                <dt>
+                  <div class=" flex items-center justify-center h-12 w-12 rounded-md text-white">
+                    <!-- Heroicon name: outline/globe-alt -->
+                    <img src="./assets/htmllogo.png" alt="HTML 5">                   
+                  </div>
+                  <p class="ml-16 text-lg leading-6 font-medium text-gray-900">HTML 5</p>
+                </dt>
+                <dd class="mt-2 ml-16 text-base text-gray-500">Découper et intégrer une maquette. Installer les outils de développement front-end.</dd>
+              </div>
+      
+              <div class="">
+                <dt>
+                  <div class=" flex items-center justify-center h-12 w-12 rounded-md text-white">
+                    <!-- Heroicon name: outline/scale -->
+                   <img src="./assets/logocss3.png" alt="logo css3">
+                  </div>
+                  <p class="ml-16 text-lg leading-6 font-medium text-gray-900">CSS 3</p>
+                </dt>
+                <dd class="mt-2 ml-16 text-base text-gray-500">SASS, Flexbox, Grid, animation, Responsive.</dd>
+              </div>
+      
+              <div class="">
+                <dt>
+                  <div class=" flex items-center justify-center h-12 w-12 rounded-md text-white">
+                    <!-- Heroicon name: outline/lightning-bolt -->
+                   <img src="./assets/javascriptlogo.png" alt="javascript logo">
+                  </div>
+                  <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Javascript</p>
+                </dt>
+                <dd class="mt-2 ml-16 text-base text-gray-500">Gérer la logique d'un programme en JavaScript, récupérer et modifier des éléments du DOM, Utiliser des méthodes asynchrones.</dd>
+              </div>
+      
+              <div class="">
+                <dt>
+                  <div class=" flex items-center justify-center h-12 w-12 rounded-md  text-white">
+                    <!-- Heroicon name: outline/annotation -->
+                    <img src="./assets/vuejslogo.png" alt="vue.js logo">
+                  </div>
+                  <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Vue.js</p>
+                </dt>
+                <dd class="mt-2 ml-16 text-base text-gray-500">Construire une application Vue.js, créer des composants réutilisables dans Vue.js, gérer les données d'une application.</dd>
+              </div>
+
+              <div class="">
+                <dt>
+                  <div class=" flex items-center justify-center h-12 w-12 rounded-md text-white">
+                    <!-- Heroicon name: outline/annotation -->
+                   <img src="./assets/nodejslogo.png" alt="node.js logo">
+                  </div>
+                  <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Node.js</p>
+                </dt>
+                <dd class="mt-2 ml-16 text-base text-gray-500">Créer un serveur Web simple avec Express, créer une API REST avec Node, Express, mettre en place un système d'authentification sur une application Express, gérer des fichiers utilisateur sur une application Express.</dd>
+              </div>
+
+              <div class="">
+                <dt>
+                  <div class=" flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                    <!-- Heroicon name: outline/annotation -->
+                    <img src="./assets/mogodbjslogo.jpeg" alt="mongoDb logo">
+                  </div>
+                  <p class="ml-16 text-lg leading-6 font-medium text-gray-900">MongoDB</p>
+                </dt>
+                <dd class="mt-2 ml-16 text-base text-gray-500">intégrer la couche de base de données de notre serveur, créer un cluster puis configurer-le avec l'option AWS, connecter l'API à cluster MongoDB</dd>
+              </div>
+
+              <div class="">
+                <dt>
+                  <div class=" flex items-center justify-center h-12 w-12 rounded-md text-white">
+                    <!-- Heroicon name: outline/annotation -->
+                    <img src="/assets/mysqlogo.png" alt="logo MySQL">
+                  </div>
+                  <p class="ml-16 text-lg leading-6 font-medium text-gray-900">MySQL</p>
+                </dt>
+                <dd class="mt-2 ml-16 text-base text-gray-500">Configurer MySQL, créer une base de données, gérer les utilisateurs, créer et modifier des tables, insérer, modifier, supprimer et sélectionner des données dans la base, réaliser une requête portant sur plusieurs tables avec les jointures.</dd>
+              </div>
+
+              <div class="">
+                <dt>
+                  <div class=" flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                    <!-- Heroicon name: outline/annotation -->
+                    <img src="./assets/tailwindcss.png" alt="tailwindcss logo">
+                  </div>
+                  <p class="ml-16 text-lg leading-6 font-medium text-gray-900">tailwindcss</p>
+                </dt>
+                <dd class="mt-2 ml-16 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+              </div>
+
+              <div class="">
+                <dt>
+                  <div class=" flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                    <!-- Heroicon name: outline/annotation -->
+                    <img src="./assets/poposlogo.png" alt="logo Pop_Os">
+                  </div>
+                  <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Linux Pop_Os</p>
+                </dt>
+                <dd class="mt-2 ml-16 text-base text-gray-500">Ajout de logiciel, gérer en ligne de commande, en bref savoir se servir d'un OS.</dd>
+              </div>
+              <div class="">
+                <dt>
+                  <div class=" flex items-center justify-center h-12 w-12 rounded-md text-white">
+                    <!-- Heroicon name: outline/annotation -->
+                    <img src="./assets/gitgithublogo.png" alt="logos git/github">
+                  </div>
+                  <p class="ml-16 text-lg leading-6 font-medium text-gray-900">git/github</p>
+                </dt>
+                <dd class="mt-2 ml-16 text-base text-gray-500">Création et gestion d'un dépôt sur github, lignes de commande git</dd>
+              </div>
+              <div class="">
+                <dt>
+                  <div class=" flex items-center justify-center h-12 w-12 rounded-md  text-white">
+                    <!-- Heroicon name: outline/annotation -->
+                    <img src="./assets/bootstraplogo.jpeg" alt="logo bootstrap">
+                  </div>
+                  <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Bootstrap</p>
+                </dt>
+                <dd class="mt-2 ml-16 text-base text-gray-500">Créer des mises en page responsives, créer des fonctionnalités et des thèmes personnalisés à l'aide de Bootstrap</dd>
+              </div>
+              <div class="">
+                <dt>
+                  <div class=" flex items-center justify-center h-12 w-12 rounded-md  text-white">
+                    <!-- Heroicon name: outline/annotation -->
+                    <img src="./assets/nuxt3logo.png" alt="logo bootstrap">
+                  </div>
+                  <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Nuxt 3</p>
+                </dt>
+                <dd class="mt-2 ml-16 text-base text-gray-500"></dd>
+              </div>
+            </dl>
           </div>
         </div>
-        
+      </div>
       </section>
     <section id="portfolio" class="bg-gray-500 border-t">
         <h2>Mon portfolio</h2>
